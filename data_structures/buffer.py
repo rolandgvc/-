@@ -1,8 +1,3 @@
-"""
-  
-    Implementation of a circular buffer of fixed storage size.
-
-"""
 class CircularBuffer:
     
     def __init__(self, size):
@@ -47,7 +42,7 @@ class CircularBuffer:
 
     def __repr__(self):
         if self.is_empty():
-          return 'buffer:[]'
-        return 'buffer:[' + ','.join(map(str,self)) + ']'
+          return '[]'
+        return '[' + ','.join(map(str,self)) + ']'
 
 

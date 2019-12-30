@@ -2,8 +2,9 @@
     Simple implementation of a stack with lists.
     
 """
+
 class Stack:
-  
+
   def __init__(self):
     self.stack = []
 
@@ -14,10 +15,9 @@ class Stack:
     self.stack.append(x)
 
   def pop(self):
-    if self.is_empty(): 
+    if self.is_empty():
       raise Exception('Stack is empty.')
     return self.stack.pop()
 
   def __repr__(self):
-    return 'stack:' + str(self.stack) 
-
+    return 'stack:' + str(self.stack)
