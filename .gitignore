@@ -1,3 +1,4 @@
 /data_structures/__pychache__
 .DS_Store
 .vscode
+*.pyc
