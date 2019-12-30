@@ -1,5 +1,5 @@
 """
-    Implementation of a stack.
+    Simple implementation of a stack with lists.
     
 """
 class Stack:
