@@ -22,7 +22,8 @@ class Node:
             self.left = self._remove(self.left, value)
         elif value > self.value:
             self.right = self._remove(self.right, value)
-        else:
+        else: 
+            # if found, replace it with largest left child
             if self.left is None:
                 return self.right
 
@@ -30,9 +31,9 @@ class Node:
             while child.right:
                 child = child.right
             
-            value = child.value;
-            self.left = self._remove(self.left, value)
-            self.value = value
+            key = child.value
+            self.left = self._remove(self.left, key)
+            self.value = key
         
         return self
 
@@ -116,8 +117,3 @@ class BinaryTree:
             return "()"
         return "str(self.root)
 
-"""
-Change Log:
------------
-
-"""

@@ -2,4 +2,5 @@
 .DS_Store
 .vscode
 *.pyc
-test.py
+*.xml
+*.iml
